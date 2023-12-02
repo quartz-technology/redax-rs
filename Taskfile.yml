@@ -1,0 +1,14 @@
+version: '3'
+
+tasks:
+  build-dev:
+    cmd: cargo build
+
+  build-release:
+    cmd: cargo build --release
+
+  lint:
+    cmd: cargo fmt --all -- --check && cargo clippy -- -D warnings
+
+  unit-tests:
+    cmd: cargo test -- --nocapture

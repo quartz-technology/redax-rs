@@ -1,0 +1,12 @@
+[package]
+name = "redax-rs"
+version = "0.1.0"
+authors = ["Luca Georges François <luca@quartz.technology>"]
+description = "Rust SDK for the Relay Data Transparency API on Ethereum"
+repository = "https://github.com/quartz-technology/redax-rs"
+license-file = "LICENSE"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
