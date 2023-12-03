@@ -20,9 +20,9 @@ Below is a list of the supported API endpoints:
 
 | Name       	                                            | Status 	 |
 |:--------------------------------------------------------|:--------:|
-| `/relay/v1/data/bidtraces/proposer_payload_delivered` 	 |  ❌   	   |
-| `/relay/v1/data/bidtraces/builder_blocks_received` 	    |  ❌   	   |
-| `/relay/v1/data/validator_registration` 	               |  ❌   	   |
+| `/relay/v1/data/bidtraces/proposer_payload_delivered` 	 |  ✅   	   |
+| `/relay/v1/data/bidtraces/builder_blocks_received` 	    |  ✅   	   |
+| `/relay/v1/data/validator_registration` 	               |  ✅   	   |
 
 ## Issues
 
