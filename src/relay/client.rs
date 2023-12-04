@@ -5,7 +5,6 @@ use url::{ParseError, Url};
 
 #[derive(Debug, Error)]
 pub enum RelayClientError {
-    // #[error(transparent)]
     #[error("failed to perform request: {0}")]
     Reqwest(#[from] reqwest::Error),
 
