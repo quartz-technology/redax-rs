@@ -5,16 +5,17 @@ use url::{ParseError, Url};
 
 #[derive(Debug, Error)]
 pub enum RelayClientError {
-    #[error(transparent)]
+    // #[error(transparent)]
+    #[error("failed to perform request: {0}")]
     Reqwest(#[from] reqwest::Error),
 
-    #[error("failed to parse api url")]
+    #[error("failed to parse api url: {0}")]
     ApiUrlParseError(#[from] ParseError),
 
     #[error("api url must not have a trailing slash")]
     ApiUrlHasTrailingSlash,
 
-    #[error("got error in response")]
+    #[error("response returned error {status}: {data}")]
     ResponseError { status: StatusCode, data: String },
 }
 
